@@ -1,24 +1,21 @@
 # crc16 for Go
 ## Why
 
-The [hash package](http://golang.org/pkg/hash/) only provides crc32 and crc64 functions, and I needed crc16 for consistent hashing in the Redis Cluster Client that I'm going to build next (just a wrapper of [radix](https://github.com/fzzbt/radix/))
+The [hash package](http://golang.org/pkg/hash/) only provides crc32 and crc64 functions, and I needed crc16 for consistent hashing in the Redis Cluster Client that I'm going to build next (just a wrapper of [radix](https://github.com/fzzbt/radix/)).
 
 ## Usage
 
-```
-	package main
+```go
+package main
 
-	import (
-		"github.com/joaojeronimo/go-crc16"
-		"fmt"
-	)
+import (
+	"github.com/joaojeronimo/go-crc16"
+	"fmt"
+)
 
-	func main () {
-		fmt.Println( crc16.Crc16("Hello World") )
-	}
-
-
-
+func main () {
+	fmt.Println( crc16.Crc16("Hello World") )
+}
 ```
 
 ## License
