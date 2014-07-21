@@ -15,6 +15,7 @@ import (
 
 func main () {
 	fmt.Println( crc16.Crc16("Hello World") )
+	fmt.Println( crc16.Kermit("Hello World") )
 }
 ```
 
